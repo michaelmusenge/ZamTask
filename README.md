@@ -86,16 +86,19 @@ The app will embrace **Zambian identity** through the **national flag colors** a
 ## 🗂 Suggested Folder Structure
 
 zamtask/
-├── frontend/ # React Native + Expo app
+├── frontend/ # React Native + TypeScript app
 │ ├── components/ # Reusable UI components
 │ ├── screens/ # Screens (Login, Dashboard, etc.)
 │ ├── assets/ # Icons, images
 │ └── utils/ # Helpers (auth, API, etc.)
 │
-├── backend/ # Node.js / Firebase backend
-│ ├── models/ # Database schemas
-│ ├── routes/ # API endpoints
-│ └── services/ # Business logic
+├── backend/ # Python backend
+│ ├── app/ # Main application
+│ │ ├── models/ # SQLAlchemy models (MySQL tables)
+│ │ ├── routes/ # API routes (FastAPI/Flask/Django REST)
+│ │ ├── services/ # Business logic
+│ │ └── utils/ # Helpers (auth, validation)
+│ └── tests/ # Unit tests
 │
 └── docs/ # Documentation & planning
 
@@ -105,22 +108,23 @@ zamtask/
 ## 🧱 Tech Stack
 
 ### Frontend (Mobile)
-- **React Native + Expo** → fast iteration, cross-platform.  
-- **Tailwind CSS** via `nativewind` (for utility-first styling).  
-- **Heroicons** via `react-native-heroicons` for a consistent icon set.  
+- **React Native + TypeScript (Expo)** → cross-platform, mobile-first.  
+- **UI:** `nativewind` (Tailwind CSS in RN) or `react-native-paper`.  
+- **Heroicons:** `react-native-heroicons` for consistent icons.  
 
-### Backend
-- **Option A: Firebase**  
-  - Authentication, Firestore, Storage, Messaging.  
-  - Simple setup, scalable for MVP.  
+### Backend (Python)
+- **Framework:** FastAPI (preferred for modern async APIs) or Django REST Framework (if you need built-in admin).  
+- **ORM:** SQLAlchemy (for FastAPI) or Django ORM.  
+- **Authentication:** JWT-based auth or Django built-in auth system.  
+- **API:** RESTful endpoints consumed by the mobile app.  
 
-- **Option B: Node.js + Express + MongoDB**  
-  - More flexibility and control.  
-  - Suitable for future scaling and custom features.  
+### Database
+- **MySQL** → structured, relational, widely supported.  
+- Hosted on **AWS RDS / DigitalOcean / Azure** or local instance for dev.  
 
 ### Admin Panel
-- **Firebase Console** (basic admin control).  
-- **React Admin** (optional) for a professional dashboard.  
+- Django Admin (if Django chosen).  
+- Or a lightweight React Admin dashboard connected to API.  
 
 ---
 
@@ -139,7 +143,7 @@ zamtask/
 
 ### Phase 3: Monetization
 - Commission per transaction (5–10%).  
-- Premium listings for providers.  
+- Premium provider listings.  
 - Ads from local businesses.  
 
 ---
@@ -163,7 +167,7 @@ zamtask/
 
 ## 📌 Roadmap (Post-MVP)
 
-- [ ] Payment integration (e.g., Airtel Money, MTN Mobile Money).  
+- [ ] Payment integration (Airtel Money, MTN Mobile Money).  
 - [ ] Advanced chat (file sharing, voice notes).  
 - [ ] Location-based recommendations (map integration).  
 - [ ] Dispute resolution system.  
@@ -174,18 +178,14 @@ zamtask/
 
 ## 🔧 Installation (Developer Setup)
 
+### Frontend (React Native + TS)
 ```bash
 # Clone repo
-git clone https://github.com/michaelmusenge/zamtask.git
-cd zamtask
+git clone https://github.com/michaelmusenge/ZamTask.git
+cd zamtask/frontend
 
-# Frontend
-cd frontend
+# Install dependencies
 npm install
+
+# Run app
 npm start
-
-# Backend
-cd ../backend
-npm install
-npm run dev
-"# ZamTask" 
