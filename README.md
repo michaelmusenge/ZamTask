@@ -1,6 +1,6 @@
 # 🇿🇲 ZamTask – MVP Plan
 
-**ZamTask** is a localized service provider platform (similar to Fiverr) designed to empower **Zambian youth** by connecting them with clients seeking side hustles, services, and small gigs.  
+**ZamTask** is a localized service provider platform designed to empower **Zambian youth** by connecting them with clients seeking side hustles, services, and small gigs.  
 
 The app will embrace **Zambian identity** through the **national flag colors** and **Heroicons**, offering a clean, modern, and professional mobile-first experience.
 
