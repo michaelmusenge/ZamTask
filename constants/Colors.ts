@@ -1,5 +1,5 @@
-const tintColorLight = "#007A33"; // Green (Zambia Primary)
-const tintColorDark = "#FF8200";  // Orange (highlight in dark mode)
+const tintColorLight = "#007A33";
+const tintColorDark = "#FF8200";  
 
 export const Colors = {
   textSecondary: "#6B7280",
@@ -11,38 +11,29 @@ export const Colors = {
   surface: "#F5F6FA",
 
   light: {
-    // Brand colors
-    primary: "#007A33",   // Green
-    secondary: "#555555ff", // Orange highlight
+     primary: "#007A33",  
+    secondary: "#555555ff",
 
-    // UI foundations
-    background: "#FFFFFF",
+     background: "#FFFFFF",
     surface: "#F5F6FA",
     card: "#FFFFFF",
-    tabBar: "#000000", // Black (strong neutral)
-
-    // text
-    textPrimary: "#111827",
+    tabBar: "#000000", 
+     textPrimary: "#111827",
     textSecondary: "#6B7280",
     textMuted: "#9CA3AF",
     white: "#FFFFFF",
 
-    // lines / chips
-    chipBg: "#F1F5F9",
+     chipBg: "#F1F5F9",
     chipText: "#334155",
 
-    // icons
-    iconMuted: "#D1D5DB",
+     iconMuted: "#D1D5DB",
 
-    // specials
-    success: "#007A33",   // Green for success
-    danger: "#EF3340",    // Red from flag
+     success: "#007A33",   
+    danger: "#EF3340",    
 
-    // links
-    link: "#014a8eff",      // Orange as CTA/link
+     link: "#084692ff",      
 
-    // your previous colors (optional, keep if you use them)
-    text: "#11181C",
+     text: "#11181C",
     tint: tintColorLight,
     icon: "#687076",
     tabIconDefault: "#687076",
@@ -50,14 +41,13 @@ export const Colors = {
   },
 
   dark: {
-    // Brand colors (dark mode adjustments)
-    primary: "#007A33",   // Keep green
-    secondary: "#FF8200", // Orange pop
+     primary: "#007A33",   
+    secondary: "#FF8200", 
 
     background: "#151718",
     surface: "#1E1E1E",
     card: "#222222",
-    tabBar: "#000000", // Deep black footer/tab
+    tabBar: "#000000", 
 
     textPrimary: "#ECEDEE",
     textSecondary: "#9CA3AF",
@@ -69,13 +59,12 @@ export const Colors = {
 
     iconMuted: "#6B7280",
 
-    success: "#007A33",   // Green
-    danger: "#EF3340",    // Red
+    success: "#007A33",   
+    danger: "#EF3340",    
 
-    link: "#FF8200",      // Orange links
+    link: "#FF8200",      
 
-    // your previous dark colors (optional)
-    text: "#ECEDEE",
+     text: "#ECEDEE",
     tint: tintColorDark,
     icon: "#9BA1A6",
     tabIconDefault: "#9BA1A6",

@@ -17,13 +17,13 @@ export default function ProfileScreen() {
 
   const user = {
     id,
-    name: "Mary Banda",
-    image: require("@/assets/images/profiles/female-placeholder.png"),
+    name: "Michael Musenge",
+    image: require("@/assets/images/profiles/male-placeholder.png"),
     location: "Lusaka, Zambia",
     bio: "Passionate designer focused on creating beautiful, user-friendly interfaces.",
     rating: 4.7,
     jobsCompleted: 25,
-    hourlyRate: "$15/h",
+    hourlyRate: "K 400 per project",
     tags: ["Tax", "Web Marketing", "UI/UX Design"],
   };
 
@@ -35,7 +35,7 @@ export default function ProfileScreen() {
       clientSkill: "Finance",
       location: "Lusaka, Zambia",
       workType: ["Full-time", "Remote"],
-      cost: "$500",
+      cost: "K 500",
       rating: 4.8,
     },
     {
@@ -45,7 +45,7 @@ export default function ProfileScreen() {
       clientSkill: "Design",
       location: "Lusaka, Zambia",
       workType: ["One-time", "Remote"],
-      cost: "$100",
+      cost: "K 100",
       rating: 4.7,
     },
     {
@@ -55,7 +55,7 @@ export default function ProfileScreen() {
       clientSkill: "Software Dev",
       location: "Ndola, Zambia",
       workType: ["Project-based", "Onsite"],
-      cost: "$1500",
+      cost: "K 1500",
       rating: 4.9,
     },
   ];

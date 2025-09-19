@@ -112,7 +112,7 @@ export default function JobCard({
 
         <View style={styles.salaryRow}>
           <Text style={[styles.salary, onDark && styles.salaryOnDark]}>
-            ${salary}
+            K {salary}
           </Text>
           <Text style={[styles.per, onDark && styles.perOnDark]}>/Month</Text>
         </View>
